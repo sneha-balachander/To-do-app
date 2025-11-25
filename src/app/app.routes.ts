@@ -8,6 +8,7 @@ export const routes: Routes = [
     },
     {
         path: 'to-dos',
-        loadComponent: () => import('./todos/todos').then(m => m.Todos)
+        loadComponent: () => import('./todos/todos').then(m => m.Todos),
+        title: 'To-Do List',
     },
 ];
